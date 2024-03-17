@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <style>
+        @media screen and (min-width: 320px) and (max-width:689px){
+            *{
+            font-family: "Plus Jakarta Sans", sans-serif;
+            margin: 0px 2px;
+        }
+        header{
+            padding: 21px 0px;
+        }
+        body{
+            margin: 0px 9%;
+        }
+        .nav{
+            display: flex;
+            margin-right:10px ;
+        }
+        
+        .nav ul{
+            list-style: none;
+            display: flex;
+        }
+        .nav ul li{
+            gap: 1 px;
+        }
+        .nav-img{
+            height: 60px;
+            width: 60px;
+        }
+        .nav1-img{
+            display: none;
+        }
+        .hide{
+            display: none;
+        }
+        .one{
+            border: 2px solid green;
+            background-color: white;
+            height: 75px;
+            border-radius: 50px;
+            display: flex;
+            margin-left: 1rem;            
+            align-items: center;
+            padding: 0px 10px;            
+        }
+        img{
+            vertical-align: middle;
+        }
+        span{
+             padding-top: 3px;
+             margin-left: 9px;
+             font-size: 36px;
+             color: #4a5e88;
+             font-weight: 600;
+            } 
+        .text{
+            display: none;
+        }
+        p{
+            display: flex;
+            flex-grow: 3;
+            align-items: center;
+            float: left;
+        }
+        .krish{
+            position: relative;
+            top: 5vh;
+            border: 1px solid black;
+            border-radius: 60px;
+            background-image: url(./image/lord-krishna-images-with-flute.png);
+            background-repeat: no-repeat;
+            background-size: 155vh 300vh;
+            height:300vh;
+             width:155vh;
+             margin-right: 10px;
+        }
+        .logo{
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 43px;
+            color: #4a5e88 ;
+            text-transform: uppercase !important;
+        }
+        /* .logo-iskcon{
+            margin-right: 1rem;
+        } */
+        .logo1{
+            height: 100px;
+            width: 100px;
+            color: white;
+        }
+        .nav1{
+            border: 2px solid black;
+            height: 85px;
+            vertical-align: middle;
+            width: 90%;
+            display: flex;
+            justify-content: space-between !important;
+            align-items: center;
+            position: fixed;
+            font-size: 35px;
+            border-radius: 74px;
+            bottom: 6px;
+            background-color: white;
+        }
+        .nav1-ul{
+            list-style: none;
+            display: flex;
+        }
+        .nav1-ul li {
+            
+             padding: 0px 30px;
+        }
+        .two{
+            display: flex;
+            gap: 1rem;
+        }
+        .nav2{
+            display: flex;
+            gap: 15px;
+        }
+        .con{
+            display: flex; 
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            background: #866dcf;
+            align-items: center !important;
+            text-decoration: underline;
+            color: #4a5e88;
+            justify-content: center !important;
+            margin-left: 15px;
+        }
+        a{
+            text-decoration: none;
+        }
+       .nav ul .hide-1
+       {
+        display: none;
+       }
+       .con1{
+        position: relative;
+        left: 700px;
+       }
+       .container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        /* border: 2px solid black; */
+        width: 1080px;
+        padding:15px 7%;
+        padding-bottom: 100px;
+       }
+
+       .container .heading p{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+} 
+
+.container .box-container{
+     display: flex;
+     flex-direction: column;
+    gap:15px;
+    margin-top: 15px;
+    
+}
+
+.container .box-container .box{
+     box-shadow: 0 5px 10px rgba(0,0,0,.2); 
+     border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px; 
+}
+
+.container .box-container .box img{
+    
+    height: 780px;
+     width: 780px;    
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 69px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 46px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+     margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 47px;
+    border-radius: 9px;
+    padding: 8px 25px;
+}
+
+ .container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+     box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03); 
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    height: auto;
+    width: auto;
+    margin-bottom: 100px;
+    margin-left: 230px;
+}
+.c{
+ /* border: 2px solid black; */
+    height: auto;
+    width: 600px;
+    margin: 30px 20px;
+    padding: 20px 0px 3px 3px;
+    font-size: 29px;
+
+}
+.space{
+    padding-left: 6px;
+    /* line-height: 10px; */
+}
+.list{
+    line-height: 30px;
+}
+.side{
+    padding-left: 16px;
+}
+
+
+    }
+ @media screen and (min-width: 690px) and (max-width:900px){
+
+        
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+header{
+    padding: 21px 0px;
+}
+body{
+    margin: 0px 3%;
+}
+.nav{
+    display: flex;
+}
+
+.nav ul{
+    list-style: none;
+    
+    display: flex;
+   
+}
+.one{
+    border: 2px solid green;
+    width: auto;
+    height: 35px;
+    border-radius: 25px;
+    float: left;
+    display: flex;
+    margin-left: 1.0rem;
+    
+    align-items: center;
+    padding: 0px 10px;
+
+    
+}
+img{
+    vertical-align: middle;
+    
+}
+span{
+     padding-top: 3px;
+     margin-left: 10px;
+     font-size: 14px;
+     color: #4a5e88;
+     font-weight: 600;
+    } 
+p{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    float: left;
+   
+}
+.logo{
+   
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #204289;
+    text-transform: uppercase !important;
+}
+.logo-iskcon{
+    margin-right: 1rem;
+}
+.nav1{
+    border: 2px solid black;
+    height: 65px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    position: relative;
+    font-size: 15px;
+    border-radius: 74px;
+}
+.nav1-ul{
+    list-style: none;
+    display: flex;
+}
+.nav1-ul li {
+    
+     padding: 0px 38px;
+}
+.two{
+    display: flex;
+    gap: 1rem;
+
+}
+.nav2{
+    display: flex;
+    gap: 15px;
+}
+.con{
+    display: flex; 
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #866dcf;
+    align-items: center !important;
+    text-decoration: underline;
+    color: #4a5e88;
+    justify-content: center !important;
+    margin-left: 15px;
+   
+}
+a{
+    text-decoration: none;
+}
+
+.krish{
+            position: relative;
+            top: 5vh;
+            border: 1PX solid black;
+            border-radius: 60px;
+            background-image: url(./image/lord-krishna-images-with-flute.png);
+            background-repeat: no-repeat;
+            background-size: 128vh 100vh;
+            height:100vh;
+            width:128vh;
+
+        }
+
+
+.container{
+    padding:15px 9%;
+    padding-bottom: 100px;
+    margin-top: 40px;
+}
+
+.container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 350px));
+    gap:15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 10px;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.container .box-container .box img{
+    height: 180px;
+    width: 180px;
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+.contact{
+    display: flex;
+    /* border: 2px solid black; */
+    height: auto;
+    width: 100%;
+    /* box-shadow: 0px 0px 10px #888888; */
+    margin-bottom: 100px;
+}
+.c{
+ /* border: 2px solid black; */
+    height: 200px;
+    width: 500px;
+    margin: 20px 20px;
+    padding: 20px 0px 3px 3px;
+
+}
+.space{
+    padding-left: 6px;
+    line-height: 1px;
+}
+.list{
+    line-height: 21px;
+}
+.side{
+    padding-left: 16px;
+}
+
+
+}
+
+
+@media screen and (min-width: 901px) and (max-width:2560px){
+    *{
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        header{
+            padding: 21px 0px;
+        }
+        body{
+            margin: 0px 10%;
+        }
+        .nav{
+            display: flex;
+        }
+        
+        .nav ul{
+            list-style: none;
+            padding-left: 250px;
+            display: flex;
+           
+        }
+        .one{
+            border: 2px solid green;
+            width: auto;
+            height: 35px;
+            border-radius: 25px;
+            float: left;
+            display: flex;
+            margin-left: 1.5rem;
+            
+            align-items: center;
+            padding: 0px 10px;
+
+            
+        }
+        img{
+            vertical-align: middle;
+            
+        }
+        span{
+             padding-top: 3px;
+             margin-left: 10px;
+             font-size: 14px;
+             color: #4a5e88;
+             font-weight: 600;
+            } 
+        p{
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            float: left;
+           
+        }
+        .logo{
+           
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            color: #204289;
+            text-transform: uppercase !important;
+        }
+        .logo-iskcon{
+            margin-right: 1rem;
+        }
+        .nav1{
+            border: 2px solid black;
+            height: 65px;
+            vertical-align: middle;
+            width: 80%;
+            display: flex;
+            justify-content: space-between !important;
+            align-items: center;
+            position: relative;
+            font-size: 15px;
+            border-radius: 74px;
+        }
+        .nav1-ul{
+            list-style: none;
+            display: flex;
+            
+        }
+        .nav1-ul li {
+            
+             padding: 0px 38px;
+        }
+        .two{
+            display: flex;
+            gap: 1rem;
+            margin-left: 180px;
+
+        }
+        .nav2{
+            display: flex;
+            gap: 15px;
+        }
+        .con{
+            display: flex; 
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #866dcf;
+            align-items: center !important;
+            text-decoration: underline;
+            color: #4a5e88;
+            justify-content: center !important;
+            margin-left: 15px;
+           
+        }
+        a{
+            text-decoration: none;
+        } 
+        .krish{
+            position: relative;
+            top: 5vh;
+            border: 1PX solid black;
+            border-radius: 20px;
+            background-image: url(./image/lord-krishna-images-with-flute.png);
+            background-repeat: no-repeat;
+            background-size: 160vh 100vh;
+            height:100vh;
+            width:160vh;
+
+        }
+
+        .container{
+            padding:15px 1%;
+            padding-bottom: 100px;
+            margin-top: 25px;
+        }
+        .container .heading p{
+            text-align: left;
+            padding-bottom: 15px;
+            color:#fff;
+            text-shadow: 0 5px 10px rgba(0,0,0,.2);
+            font-size: 50px;
+        }
+
+.container .box-container{
+    display: flex;
+    grid-template-columns: repeat(4, minmax(270px, 1fr));
+    gap:15px;
+    margin-top: 15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+    max-width: 290px;
+}
+
+.container .box-container .box img{
+    height: 180px;
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 15px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+
+.contact{
+    display: flex;
+    /* border: 2px solid black; */
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 0px 10px #888888;
+    margin-bottom: 100px;
+}
+.c{
+ /* border: 2px solid black; */
+    height: 200px;
+    width: 500px;
+    margin: 20px 20px;
+    padding: 20px 0px 3px 3px;
+
+}
+.space{
+    padding-left: 6px;
+    line-height: 1px;
+}
+.list{
+    line-height: 21px;
+}
+.side{
+    padding-left: 16px;
+}
+        
+
+ } 
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <header>
+        <p><img src="./image/logo-iskcon.svg" class="logo-iskcon logo1"><span class="logo">ISKCON<br> Vrindavan</span></p>
+
+
+        <ul>
+            <li class="one" ><img src="./image/open.svg" height="19px" width="19px" class="nav-img" ><span>Open </span>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./image/cloudy.gif" height="22px" width="22px" class="nav1-img"><span class="hide">04:10-13:00</span></li>
+            <li class="one hide-1"><img src="./image/calendar.png" height="35px" width="35px" class="nav-img" class="hi"><span class="text"><a href="./login.html">Schedule</a></span></li>
+            <li class="one hide-1"><img src="./image/dish.png" height="35px" width="35px" class="nav-img"><span class="text"><a href="./login.html">Coupons</a></span></li>
+            <li class="one"><img src="./image/bell.png" height="18px" width="19px" class="nav-img"></li>
+            <li class="one"><span><a href="./login.html">Login</a></span></li>
+
+        </ul>
+        </header>
+    </div>
+    <nav class="two">
+    <div class="nav1">
+        <ul class="nav1-ul">
+        <li><a href="./index.html"><b>Home</b></a></li>
+        <li><a href="./iskcon.html"><b>ISKCON</b></a></li>
+        <li><a href="./services.html"><b>Services</b></a></li>
+        <li><a href="./festivals.html"><b>Festivals</b></a></li>
+        <!-- <li><a href=""><b>Facility</b></a></li> -->
+        <li><a href="./donate.html"><b>Donate</b></a></li>
+        <!-- <li><a href=""><b>Blog</b></a></li> -->
+        
+    </ul>
+    
+</div>
+<div class="nav2">
+    <a class="con con1" href="https://maps.app.goo.gl/svDjjSsLxAoW9W3H9"><img src="./image/navigate.svg" height="25px" width="25px" class="nav-img"></a>
+    <a class="con con1" href="./contact.html"><img src="./image/chat.svg" height="25px" width="25px" class="nav-img"></a>
+</div>
+    </nav>
+    <div class="krish"></div>
+   
+<div class="container">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="./image/About us.jpg" alt="">
+            <h3>About Us</h3>
+            <p>The Sri Sri Krishna Balaram Mandir, situated in the Raman Reti area of Vrindavan Holds....</p>
+            <a href="./about-info.html" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="./image/radha-krishna-images-black-and-white.png" height="auto" width="200px" alt="">
+            <h3>Services</h3>
+            <p>The Sri Sri Krishna Balaram Mandir, situated in the Raman Reti area of Vrindavan Holds....</p>
+            <a href="./services.html" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="./image/festival.jpg" height="auto" width="200px" alt="">
+            <h3>Festivals</h3>
+            <p>The Sri Sri Krishna Balaram Mandir, situated in the Raman Reti area of Vrindavan Holds....</p>
+            <a href="./festivals.html" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="./image/Annadhan.jpg" height="auto" width="200px" alt="">
+            <h3>Donate Us</h3>
+            <p>The Sri Sri Krishna Balaram Mandir, situated in the Raman Reti area of Vrindavan Holds....</p>
+            <a href="./donate.html" class="btn">read more</a>
+        </div>
+    </div>
+</div>    
+    <div class="contact">
+        <div class="c">
+            <p><img src="./image/logo-iskcon.svg" class="logo-iskcon logo1"><span class="logo">ISKCON<br> Vrindavan</span></p><br><br><br><br>
+            <address>ISKCON Vrindavan, Krishna Balaram Mandir
+                Bhaktivedanta Swami Marg, Raman Reti,
+                Vrindavan, Uttar Pradesh-281121, India</address>
+
+        </div>
+
+
+        <div class="c">
+            <h2 style="color: #4a5e88;">Timings:</h2>
+            <ul class="list">
+                <li>Samadhi Arati – 04:10AM</li>
+                <li>Mangala Arati – 04:30AM</li>
+                <li>Tulsi-Puja – 05:00AM</li>
+                <li>Sringar Darshan – 07:15AM</li>
+                <li>Guru Puja – 07:25AM</li>
+                <li>Bhagavatam Class – 08:00AM</li>
+            </ul>
+        </div>
+
+
+        <div class="c">
+            <h2 style="color: #4a5e88;">Our Services:</h2>
+            <ul class="list">
+                <li>Simple Living, High Thinking</li>
+                <li>Srila Prabhupada Audiobooks</li>
+                <li>Life Membership</li>
+                <li>Community Service Centre</li>
+                <li>Gomata Products</li>
+                <li>Buy Books Online</li>
+            </ul>
+        </div>
+        <div class="c">
+            <h2 style="color: #4a5e88;">Contact us</h2>
+            
+                <p class="side"><img src="./image/phone-call.png" height="20px" width="20px"><span class="space">+917618183108</span></p>
+                <p class="side"><img src="./image/mail.png" height="20px" width="20px"><span class="space">info@iskconvrindavan.com</span></p>                
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>

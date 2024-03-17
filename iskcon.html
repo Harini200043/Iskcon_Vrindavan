@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style2.css">
+    <title>krishna</title>
+    <style>
+        *{
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        header{
+            padding: 21px 0px;
+        }
+        body{
+            margin: 0px 10%;
+        }
+        .nav{
+            display: flex;
+        }
+        .nav ul{
+            list-style: none;
+            padding-left: 250px;
+            display: flex;
+        }
+        .one{
+            border: 2px solid green;
+            width: auto;
+            height: 35px;
+            border-radius: 25px;
+            float: left;
+            display: flex;
+            margin-left: 1.5rem;
+            align-items: center;
+            padding: 0px 10px;
+        }
+        img{
+            vertical-align: middle;
+        }
+        span{
+             padding-top: 3px;
+             margin-left: 10px;
+             font-size: 14px;
+             color: #4a5e88;
+             font-weight: 600;
+            } 
+        p{
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            float: left;
+            line-height: 24px;
+        }
+        .logo{
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            color: #204289;
+            text-transform: uppercase !important;
+        }
+        .logo-iskcon{
+            margin-right: 1rem;
+        }
+        .nav1{
+            border: 2px solid black;
+            height: 65px;
+            vertical-align: middle;
+            width: 80%;
+            display: flex;
+            justify-content: space-between !important;
+            align-items: center;
+            position: relative;
+            font-size: 15px;
+            border-radius: 74px;
+        }
+        .nav1-ul{
+            list-style: none;
+            display: flex;
+        }
+        .nav1-ul li {
+             padding: 0px 50px;
+        }
+        .two{
+            display: flex;
+            margin-left: 180px;
+            gap: 1rem;
+        }
+        .nav2{
+            display: flex;
+            gap: 15px;
+        }
+        .con{
+            display: flex; 
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #866dcf;
+            align-items: center !important;
+            text-decoration: underline;
+            color: #4a5e88;
+            justify-content: center !important;
+            margin-left: 15px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .container{
+            padding:15px 1%;
+            padding-bottom: 100px;
+            margin-top: 25px;
+        }
+        .container .heading p{
+            text-align: left;
+            padding-bottom: 15px;
+            color:#fff;
+            text-shadow: 0 5px 10px rgba(0,0,0,.2);
+            font-size: 50px;
+        }
+
+.container .box-container{
+    display: flex;
+    grid-template-columns: repeat(4, minmax(270px, 1fr));
+    gap:15px;
+    margin-top: 15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+    max-width: 290px;
+}
+
+.container .box-container .box img{
+    height: 180px;
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 15px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+
+.contact{
+    display: flex;
+    /* border: 2px solid black; */
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 0px 10px #888888;
+    margin-bottom: 100px;
+}
+.c{
+ /* border: 2px solid black; */
+    height: 200px;
+    width: 500px;
+    margin: 20px 20px;
+    padding: 20px 0px 3px 3px;
+
+}
+.space{
+    padding-left: 6px;
+    line-height: 1px;
+}
+.list{
+    line-height: 21px;
+}
+.side{
+    padding-left: 16px;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <header>
+        <p><img src="./image/logo-iskcon.svg" class="logo-iskcon"><span class="logo">ISKCON<br> Vrindavan</span></p>
+        <ul style="padding-left: 250px;">
+            <li class="one" ><img src="./image/open.svg" height="19px" width="19px"><span>Open </span>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./image/cloudy.gif" height="22px" width="22px"><span>04:10-13:00</span></li>
+            <li class="one"><img src="./image/calendar.png" height="35px" width="35px"><span><a href="./login.html">Schedule</a></span></li>
+            <li class="one"><img src="./image/dish.png" height="35px" width="35px"><span><a href="./login.html">Coupons</a></span></li>
+            <li class="one"><img src="./image/bell.png" height="18px" width="19px"></li>
+            <li class="one"><span>Login</span></li>
+        </ul>
+        </header>
+    </div>
+    <nav class="two">
+    <div class="nav1">
+        <ul class="nav1-ul">
+        <li><a href="./index.html"><b>Home</b></a></li>
+        <li><a href="./iskcon.html"><b>ISKCON</b></a></li>
+        <li><a href="./services.html"><b>Services</b></a></li>
+        <li><a href="./festivals.html"><b>Festivals</b></a></li>
+        <!-- <li><a href=""><b>Facility</b></a></li> -->
+        <li><a href="./donate.html"><b>Donate</b></a></li>
+        <!-- <li><a href=""><b>Blog</b></a></li> -->
+    </ul>
+</div>
+<div class="nav2">
+    <a class="con" href="https://maps.app.goo.gl/svDjjSsLxAoW9W3H9"><img src="./image/navigate.svg" height="25px" width="25px"></a>
+    <a class="con" href=""><img src="./image/chat.svg" height="25px" width="25px"></a>
+</div>
+</nav><br><br>
+
+
+
+
+
+
+
+
+<div class="container">
+<h1 class="heading">ISKCON</h1><br>
+<p>The Sri Sri Krishna Balaram Mandir, situated in the Raman Reti area of Vrindavan, holds a special significance for the devotees of the International Society for Krishna Consciousness. This grand temple represents the fulfilled dream of Srila Prabhupada, Founder Acharya of ISKCON, who wished to construct a temple of unparalleled beauty for the worship of the transcendental brothers Krishna and Balaram in the same village where They played more than five thousand years ago.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- <div class="container"> -->
+    <div class="box-container">
+
+        <div class="box">
+            <img src="./image/About us.jpg" height="auto" width="200px" alt="">
+            <h3>About Us</h3>
+            <p>The Sri Sri Krishna Balaram Mandir, situated in the Raman Reti area of Vrindavan Holds....</p>
+            <a href="./about-info.html" class="btn">read more</a>
+        </div>
+
+         <div class="box">
+            <img src="./image/History.jpg" height="auto" width="200px" alt="">
+            <h3>The History</h3>
+            <p>The International Society for Krishna Consciousness (ISKCON) was founded in New York.....</p>
+            <a href="./history.html" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="./image/Philosophy.jpg" height="auto" width="200px" alt="">
+            <h3>Philosophy</h3>
+            <p>Probably you have already seen members of the Hare Krsna movement singing and dancing......</p>
+            <a href="./philosophy.html" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="./image/Founder.jpg" height="auto" width="200px" alt="">
+            <h3>Founder</h3>
+            <p>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada appeared in this world in 1896 in Calcutta....</p>
+            <a href="./founder.html" class="btn">read more</a>
+        </div>
+    </div>
+        <div class="box-container">
+        <div class="box">
+            <img src="./image/Beads (1).jpg" height="auto" width="200px" alt="">
+            <h3>Why This Krishna Conscious Movement?</h3>
+            <p>The search for happiness
+                Everyone But It Elusively Slips Away From Everyone. What Is....</p>
+            <a href="./why.html" class="btn">read more</a>
+        </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="c">
+            <p><img src="./image/logo-iskcon.svg" class="logo-iskcon logo1"><span class="logo">ISKCON<br> Vrindavan</span></p><br><br><br><br>
+            <address>ISKCON Vrindavan, Krishna Balaram Mandir
+                Bhaktivedanta Swami Marg, Raman Reti,
+                Vrindavan, Uttar Pradesh-281121, India</address>
+
+        </div>
+
+
+        <div class="c">
+            <h2 style="color: #4a5e88;">Timings:</h2>
+            <ul class="list">
+                <li>Samadhi Arati – 04:10AM</li>
+                <li>Mangala Arati – 04:30AM</li>
+                <li>Tulsi-Puja – 05:00AM</li>
+                <li>Sringar Darshan – 07:15AM</li>
+                <li>Guru Puja – 07:25AM</li>
+                <li>Bhagavatam Class – 08:00AM</li>
+            </ul>
+        </div>
+
+
+        <div class="c">
+            <h2 style="color: #4a5e88;">Our Services:</h2>
+            <ul class="list">
+                <li>Simple Living, High Thinking</li>
+                <li>Srila Prabhupada Audiobooks</li>
+                <li>Life Membership</li>
+                <li>Community Service Centre</li>
+                <li>Gomata Products</li>
+                <li>Buy Books Online</li>
+            </ul>
+        </div>
+        <div class="c">
+            <h2 style="color: #4a5e88;">Contact us</h2>
+            
+                <p class="side"><img src="./image/phone-call.png" height="20px" width="20px"><span class="space">+917618183108</span></p>
+                <p class="side"><img src="./image/mail.png" height="20px" width="20px"><span class="space">info@iskconvrindavan.com</span></p>                
+
+        </div>
+    </div>
+
+</body>
+</html>
